@@ -1,0 +1,224 @@
+body {
+  background-image: url('http://dsarena.free.fr/mugenlight/stages/sf2-01-ryu.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-attachment: fixed;
+}
+
+h1, h2, h3, p, label {
+  color: white;
+  font-family: 'Kanit', serif;
+  font-weight: 400;
+}
+
+.q-counter,
+.s-counter {
+  background-color: rgba(0,0,0, 0.6);
+  padding: 5px;
+}
+
+.quiz-intro,
+#form-questions {
+  background-color: rgba(0,0,0, 0.6);
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.leftSide, .rightSide {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.leftSide {
+  float: left;
+  text-align: right;
+}
+
+.rightSide {
+  float: right;
+  text-align: left;
+  display: flex;
+}
+
+.sf-logo {
+  width: 40%;
+}
+
+.quiz-text {
+  font-family: 'Kanit', 'Sans-Serif';
+  font-weight: 700;
+  background: -webkit-linear-gradient(#FDFD00 50%, #dd1d25 65%);
+  transform: rotate(-11deg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4em;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.quiz-start {
+  clear: both;
+}
+
+.start p,
+.next p,
+.restart p {
+  background: -webkit-linear-gradient(#FDFD00 50%, #dd1d25 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.label-wrap {
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+}
+
+label {
+  display: block;
+  background-color: #d7700c;
+  margin: 3px 0px;
+}
+
+label:hover {
+  background-color: #882000;
+  transition: 500ms;
+}
+
+.user-counts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.quiz-logo,
+.quiz-intro,
+.form-head,
+.form-submit,
+#form-questions,
+.quiz-question-choices,
+.question-feedback{
+  text-align: center;
+}
+
+#form-questions video {
+  width: 100%;
+}
+
+.quiz-question {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.question-choice {
+  text-align: left;
+  margin-left: 10px;
+}
+
+button {
+  background: -webkit-linear-gradient(#FDFD00 50%, #dd1d25 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.answer {
+  margin-bottom: 10px;
+}
+
+.final-feedback {
+  font-size: 1.1em;
+}
+
+.column-left,
+.column-right {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.column-left {
+  float: left;
+}
+
+.questions {
+  text-decoration: underline;
+}
+
+.quiz-animation img {
+  width: 50%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .sf-logo {
+    width: 60%;
+  }
+
+  .quiz-text {
+    font-size: 2em;
+  }
+
+  .quiz-intro h3,
+  .form-head h3  {
+     font-size: 0.85em;
+  }
+
+  .final-feedback,
+  .answer-summary {
+    font-size: 0.75em;
+  }
+
+  .answer-summary p {
+    line-height: 15px;
+  }
+
+  #form-questions img {
+    width: 100%;
+  }
+
+  #form-questions video {
+    width: 100%;
+  }
+
+  .review {
+    font-size: 1.5em;
+  }
+
+  .column-left,
+  .column-right {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px and max-width: 1024px) {
+  .quiz-text {
+    font-size: 4.5em;
+  }  
+
+  .quiz-intro h3,
+  .form-head h3,
+  .start,
+  label,
+  button,
+  .q-counter,
+  .s-counter,
+  .question-feedback,
+  .final-feedback,
+  .answer-summary,
+  .restart  {
+     font-size: 2em;
+  }
+}
