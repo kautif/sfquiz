@@ -1,9 +1,18 @@
-body {
-  background-image: url('http://dsarena.free.fr/mugenlight/stages/sf2-01-ryu.jpg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  height: 500px;
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   background-attachment: fixed;
+  background: url('http://dsarena.free.fr/mugenlight/stages/sf2-01-ryu.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1, h2, h3, p, label {
@@ -63,8 +72,12 @@ h1, h2, h3, p, label {
   clear: both;
 }
 
+.start p {
+  margin-top: 0%;
+}
+
 .start p,
-.next p,
+.question-feedback .next p,
 .restart p {
   background: -webkit-linear-gradient(#FDFD00 50%, #dd1d25 65%);
   -webkit-background-clip: text;
@@ -73,12 +86,11 @@ h1, h2, h3, p, label {
   margin-left: auto;
   margin-right: auto;
   font-weight: 800;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .label-wrap {
   margin: auto;
-  display: inline-block;
   text-align: left;
 }
 
@@ -112,6 +124,20 @@ label:hover {
   width: 100%;
 }
 
+.form-head h2,
+.form-submit button,
+.question-feedback h2 {
+  font-size: 2em;
+}
+
+.label-wrap label,
+.question-feedback p,
+.quiz-start h3,
+.q-counter,
+.s-counter {
+  font-size: 1.5em;
+}
+
 .quiz-question {
   width: 75%;
   margin-left: auto;
@@ -128,7 +154,6 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
-  font-size: 1em;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -138,7 +163,7 @@ button {
 }
 
 .final-feedback {
-  font-size: 1.1em;
+  font-size: 2em;
 }
 
 .column-left,
@@ -154,31 +179,173 @@ button {
   float: left;
 }
 
-.questions {
-  text-decoration: underline;
+.answers-summary {
+  background-color: #882000;
+  margin-right: 15px;
 }
 
 .quiz-animation img {
   width: 50%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .sf-logo {
-    width: 60%;
+@media (min-width: 1024px) {
+  label {
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (width: 320px) {
+  .quiz-intro {
+    width: 100%;
   }
 
   .quiz-text {
+    font-size: 2.75em;
+  }
+
+  .form-head h2,
+  .quiz-intro h3 {
+    font-size: 1.75em;
+  }
+
+  .form-submit button {
     font-size: 2em;
+  }
+  
+  .final-feedback {
+    font-size: 1.25em;
+  }
+}
+
+@media (width: 768px) {
+  p {
+    font-size: 1.5em;
+  }
+
+  .q-counter,
+  .s-counter {
+    font-size: 1.5em;
+  }
+
+  .sf-logo {
+    width: 90%;
   }
 
   .quiz-intro h3,
-  .form-head h3  {
-     font-size: 0.85em;
+  .form-head h2  {
+     font-size: 1.5em;
+  }
+
+  .quiz-text {
+    font-size: 5.75em;
+  }
+
+  .start p,
+  .next p,
+  .restart p {
+    font-size: 2.5em !important;
+  }
+
+  .quiz-question,
+  #form-questions {
+    width: 100%;
+  }
+
+  .form-head h2 {
+    font-size: 2em;
+  }
+
+  label {
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .label-wrap span {
+    font-size: 1em;
+  }
+
+  .form-submit {
+    font-size: 1.5em;
+  }
+
+  .question-feedback h2 {
+    font-size: 2em;
+  }
+
+  .question-feedback p {
+    font-size: 1.5em;
+  }
+
+  .final-feedback {
+    font-size: 1.5em;
+  }
+
+  .review {
+    font-size: 3em;
+  }
+
+  .column-left,
+  .column-right {
+    width: 50%;
+  }
+
+  .column-left p,
+  .column-right p {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .sf-logo {
+    width: 90%;
+  }
+
+  .quiz-question,
+  #form-questions {
+    width: 100%;
+  }
+
+  .label-wrap {
+    display: block;
+  }
+
+  label {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .label-wrap span {
+    font-size: 1.25em;
+  }
+
+  .quiz-text {
+    font-size: 3em;
+  }
+
+  .quiz-intro h3,
+  .form-head h2,
+  .q-counter,
+  .s-counter  {
+     font-size: 1.5em;
+  }
+
+   .question-feedback p {
+    font-size: 1.5em;
+   }
+
+  .next p,
+  .question-feedback h2,
+  .form-submit button {
+    font-size: 2em;
   }
 
   .final-feedback,
   .answer-summary {
-    font-size: 0.75em;
+    font-size: 1.75em;
   }
 
   .answer-summary p {
@@ -186,7 +353,7 @@ button {
   }
 
   #form-questions img {
-    width: 100%;
+    width: 50%;
   }
 
   #form-questions video {
@@ -203,13 +370,14 @@ button {
   }
 }
 
-@media (min-width: 768px and max-width: 1024px) {
+@media (min-width: 769px and max-width: 1024px) {
+  
   .quiz-text {
     font-size: 4.5em;
   }  
 
   .quiz-intro h3,
-  .form-head h3,
+  .form-head h2,
   .start,
   label,
   button,

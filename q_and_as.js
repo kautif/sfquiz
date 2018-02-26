@@ -17,14 +17,14 @@
  const possibleAnswers = [
                          ['Guile','Ryu', 'M. Bison','You','No one'],
                          ['Sean', 'Dan', 'Akuma', 'Ken', 'Sakura'],
-                         ['Kung Fu', 'Tae Kwon Do', 'Art of the Fist', 'Satsui no Hado', 'Shotokan'],
-                         ['M. Bison', 'Akuma', 'Gouken', 'They never had a master', 'themselves'],
-                         ['Akuma murdered him', 'He remains at the dojo which Ryu and Ken learned from', 'He travels the world to improve his skills', 'He retired', 'He meditates on top of mountains.'],
+                         ['Kung Fu', 'Wing Chun', 'Art of the Fist', 'Satsui no Hado', 'Shotokan'],
+                         ['M. Bison', 'Akuma', 'Gouken', 'No one', 'Themselves'],
+                         ['Akuma murdered him', 'He trains at the dojo', 'He travels to improve his skills', 'He retired', 'He meditates on mountains.'],
                          ['Dan and Karin', 'Sakura and Sean', 'Hinata and Kintaro', 'Abel and Alex', 'Dan and Batsu'],
-                         ['Tatsumaki Senpu Kyaku', 'Shun Goku Satsu', 'Hadouken', 'Shinryu Reppa', 'Piledriver'],
-                         ['Ryu’s is firey and Ken’s is electric','Ryu’s is fast and Ken’s is slow','Ryu’s goes across the screen and Ken’s goes straight up', 'Ryu’s is a few strong hits and Ken’s is a lot of small hits','Ryu uses his fists and Ken uses his feet'],
-                         ['Because of the scar he gave on his chest and for permanently blinding his eye', 'He can’t defeat Ryu', 'Because Ryu is trying to defeat his master, Bison', 'For Ryu uppercutting him', 'Because Ryu walked away from a fight between them'],
-                         ['He gets really angry', 'When being violent becomes too enjoyable', 'Loses control of his Satsui no Hadou', 'When he wants vengeance', 'When one of his friends is badly hurt.']
+                         ['Tatsumaki Senpu Kyaku', 'Shun Goku Satsu', 'Hadouken', 'Rekkaken', 'Piledriver'],
+                         ['Ryu’s: Firey, Ken’s: Electric','Ryu’s: Fast, Ken’s: Slow','Ryu’s: Left to right, Ken’s: Bottom to top', 'Ryu’s: Few strong hits, Ken’s: Many small hits','Ryu: Uses fists, Ken: Uses feet'],
+                         ['For scarring his chest', 'He can’t defeat Ryu', 'Ryu wants to defeat M.Bison', 'For Ryu uppercutting him', 'Ryu walked away from fighting him'],
+                         ['He gets really angry', 'He enjoys the violence', 'Loses control of his Satsui no Hadou', 'When he wants vengeance', 'When one of his friends is badly hurt.']
                          ];
  
  // If New question added --> add correct answer
@@ -36,8 +36,8 @@
                          'Akuma murdered him',
                          'Sakura and Sean',
                          'Hadouken',
-                         'Ryu’s is a few strong hits and Ken’s is a lot of small hits',
-                         'Because of the scar he gave on his chest and for permanently blinding his eye',
+                         'Ryu’s: Few strong hits, Ken’s: Many small hits',
+                         'For scarring his chest',
                          'Loses control of his Satsui no Hadou'
                          ];
                          
